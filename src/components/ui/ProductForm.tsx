@@ -29,7 +29,7 @@ export default function ProductForm({ product, isEdit = false }: Props) {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
   const [imageFile, setImageFile] = useState<File | null>(null);
-  const [imagePreview, setImagePreview] = useState<string | null>(product?.image_url || null);
+  const [imagePreview, setImagePreview] = useState<string | null>(product?.image || null);
   const fileRef = useRef<HTMLInputElement>(null);
 
   const { register, handleSubmit, formState: { errors } } = useForm<ProductFormData>({

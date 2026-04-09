@@ -111,9 +111,9 @@ export default function ProductsPage() {
             <div key={product.id} className="card hover:shadow-md transition-shadow group p-0 overflow-hidden">
               {/* Image */}
               <div className="relative w-full h-36 bg-gray-100">
-                {product.image_url ? (
+                {product.image ? (
                   <Image
-                    src={product.image_url}
+                    src={product.image}
                     alt={product.name}
                     fill
                     className="object-cover"

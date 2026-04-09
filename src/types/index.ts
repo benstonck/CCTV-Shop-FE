@@ -9,7 +9,7 @@ export interface Product {
   id: number;
   name: string;
   description: string;
-  image_url: string | null;
+  image: string | null;
   base_price: number;
   gst_percentage: number;
   hsn_code: string;
